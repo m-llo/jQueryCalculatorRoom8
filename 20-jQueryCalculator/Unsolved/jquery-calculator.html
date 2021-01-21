@@ -90,6 +90,46 @@ $(document).ready(function() {
 // secondNumber function() etc
 
 // with each click of the button, we will append to the previously pushed button
+var plus = $(".operator").val("plus");
+plus = "+";
+
+var minus = $(".operator").val("minus");
+minus = "-"
+
+var times = $(".operator").val("times");
+times = "*";
+
+var divide = $(".operator").val("divide");
+divide = "/";
+
+var equals = $(".equal").val("equals");
+equals = "=";
+
+var power = $(".operator").val("power");
+power = "^";
+
+var clear = $(".clear").val("clear");
+var clear = "";
+
+//when clear is pressed, foruma = clear
+
+formula = [];
+
+//when clear is pressed, foruma = clear
+
+// var number = $(".number").val();
+
+$(".number").on("click", function() {
+number = $(this).val();
+formula.push(number);
+console.log(formula);
+});
+
+$(".plus").on("click", function() {
+plus = $(this).val();
+formula.push(number);
+console.log(formula);
+});
 
 // enter has to = return or something that will execute the function (maybe call the function)?
 
